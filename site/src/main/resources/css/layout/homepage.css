@@ -1,0 +1,39 @@
+.home-module {
+    height:350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center left;
+}
+
+#home-content {
+    padding: 50px 20px;
+  }
+  
+  #home-headline h1 {
+    padding: 5px;
+  }
+  
+  #home-headline  {
+    padding: 5px;
+    color: #866438;
+  }
+  
+  #home-main-text strong,  a {
+    color: #c5873f;
+  }
+
+  .quote {
+    color: #444;
+  }
+  
+  .quote-source {
+    color: #86644E;
+  }
+
+  .specs {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px !important;
+    color: #382410;
+    text-shadow: 2px 2px #BE924C;
+  }

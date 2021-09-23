@@ -1,0 +1,6 @@
+databaseChangeLog:
+
+# Initial schema including
+  - include:
+     file: 000-reset.sql
+     relativeToChangelogFile: true

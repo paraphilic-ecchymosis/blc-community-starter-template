@@ -1,0 +1,19 @@
+#product-specs {
+    color: #866438;
+  }
+  
+  #product-name {
+    color:#866438;
+  }
+
+  #product-carousel {
+    margin-top: 5%;
+  }
+  
+  .prod-top-right {
+    padding: 2%;
+  }
+  
+  .prod-carousel-item {
+    max-height: 250px;
+  }

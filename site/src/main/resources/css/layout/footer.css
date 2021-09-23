@@ -1,0 +1,21 @@
+
+.site-social-media-mobile > a {
+    padding: 12px 4% 12px 4% !important;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+footer ul li a {
+    color: #3e3947 !important;
+}
+
+footer ul li a:hover {
+    text-shadow: #aaaaaa 0 0 1px;
+}
+
+footer ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

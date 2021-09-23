@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head th:include="layout/partials/head (pageTitle='Home of the Pack-Rifle')"></head>
+
+<body th:class="${'locale-' + session.blLocale.localeCode}">
+    <th:block th:replace="layout/partials/nav" />
+
+    <div class="main">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div id="home-hero" class="full-width px-0"
+                    style='height: 400px; background-image: url("https://res.cloudinary.com/ddn317rz7/image/upload/c_crop,h_1000,w_3000,y_500/v1611006394/Pack%20Rifle/Home%20Page/Assembed-Pack-Rifle-In-Backpack-Outdoors_png2q7.png");'>
+                    <div id="player" class="full-width"></div>
+                    <script>
+                        // 2. This code loads the IFrame Player API code asynchronously.
+                        var tag = document.createElement('script');
+
+                        tag.src = "https://www.youtube.com/iframe_api";
+                        var firstScriptTag = document.getElementsByTagName('script')[0];
+                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                        // 3. This function creates an <iframe> (and YouTube player)
+                        //    after the API code downloads.
+                        var player;
+                        function onYouTubeIframeAPIReady() {
+                            player = new YT.Player('player', {
+                                height: '100%',
+                                width: '100%',
+                                videoId: 'WbZQtOe7FzI',
+                                playerVars: {
+                                    controls: '0',
+                                    autoplay: '0',
+                                    loop: '1',
+                                    modestbranding: '1',
+                                    fs: '0',
+                                    disablekb: '1',
+                                    autohide: '1',
+                                    rel: '0'
+                                },
+                                events: {
+                                    'onReady': onPlayerReady,
+                                    'onStateChange': onPlayerStateChange
+                                }
+                            });
+                        }
+
+                        // 4. The API will call this function when the video player is ready.
+                        function onPlayerReady(event) {
+                            event.target.playVideo();
+                            event.target.mute();
+                        }
+
+                        // 5. The API calls this function when the player's state changes.
+                        //    The function indicates that when playing a video (state=1),
+                        //    the player should play for six seconds and then stop.
+                        var done = false;
+                        function onPlayerStateChange(event) {
+                            if (event.data == YT.PlayerState.ENDED) {
+                                event.target.playVideo();
+                            }
+                        }
+                        function stopVideo() {
+                            player.stopVideo();
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="container py-6" id="home-content">
+                    <div id="home-headline" class="text-center">
+                      <h1 class="text-uppercase">The world’s lightest, fastest take-down rifle</h1>
+                      <div>
+                        <p class="fs-4">from Mountain View Arms, LLC.</p>
+                      </div>
+                    </div>
+                    <section id="home-main-text">
+                      <div>
+                        <p>Our Pack-Rifle is an <em><strong>incredibly light weight</strong></em>, take-down, utility rifle.
+                          The receiver, and most other parts, of the Pack-Rifle are machined from high strength aluminum,
+                          while most wear parts and fasteners are constructed of stainless steel. The barrel is a precision
+                          button rifled, Cro-Moly liner with a carbon fiber composite outer. Carbon fiber is also used for
+                          the butt stock tube of the rifle. This construction makes the Pack-Rifle not only the lightest
+                          rifle out there, but very weather resistant as well.</p>
+                        <p>But the feather-weight of our Pack-Rifle is only part of the story. In addition to being light,
+                          the Pack-Rifle also takes down to a very small size. The same mechanism that allows the loading
+                          and extraction of spent shells also enables the rifle to take down into two pieces, <em><strong>in
+                              less than 2 seconds without tools!</strong></em> It reassembles just as fast.</p>
+                        <p>Other features include, but are not limited to, storage in the handle and butt stock tube of the
+                          rifle. Please see our <a href="/shop/" class="text-decoration-none">Shop
+                            page</a>&nbsp;for a full list of our wide range of options.</p>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="container-fluid home-module"
+                  style='background-image: url("https://res.cloudinary.com/ddn317rz7/image/upload/c_crop,h_1000,w_3000,y_500/v1611006394/Pack%20Rifle/Home%20Page/Assembed-Pack-Rifle-In-Backpack-Outdoors_png2q7.png");'>
+                  <div class="row justify-content-center align-items-center" style="height: inherit;">
+                    <div class="col-4"></div>
+                    <div class="specs col-6 text-center h1">Weight: Only 15.5oz.!</div>
+                  </div>
+                </div>
+              
+                <div class="container-fluid home-module"
+                  style='background-image: url("https://res.cloudinary.com/ddn317rz7/image/upload/c_crop,h_1024,w_3000,y_500/v1611006392/Pack%20Rifle/Home%20Page/Pack-Rifle-Takedown-in-Backpack-Easy-To-Carry_3000pxW_kk5drv.jpg");'>
+                  <div class="row justify-content-center align-items-center" style="height: inherit;">
+                    <div class="specs col-6 text-center h1">
+                      Overall Length: 33″<br>
+                      Takedown Length: 17″
+                    </div>
+                    <div class="col-4"></div>
+                  </div>
+                </div>
+              
+                <div class="container-fluid home-module"
+                  style='background-image: url("https://res.cloudinary.com/ddn317rz7/image/upload/c_crop,h_1024,w_3000,y_500/v1611006392/Pack%20Rifle/Home%20Page/Pack-Rifle-In-Position-To-Shoot-Facing-Right_3000pxW_rgbcko.jpg");'>
+                  <div class="row justify-content-center align-items-center" style="height: inherit;">
+                    <div class="col-4"></div>
+                    <div class="specs col-6 text-center h1">
+                      Calibre: .22
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="container-fluid home-module"
+                  style='background-image: url("https://res.cloudinary.com/ddn317rz7/image/upload/c_crop,h_1024,w_3000/v1611006392/Pack%20Rifle/Home%20Page/Pack-Rifle-Lady-Aiming-Rifle_2_3000pxW_hi1x9t.png");'>
+                  <div class="row justify-content-center align-items-center" style="height: inherit;">
+                    <div class="specs col-6 text-center h1">
+                      Sights: Adjustable Peep
+                    </div>
+                    <div class="col-4"></div>
+                  </div>
+                </div>
+              
+                <div class="container-fluid home-module"
+                  style='background-image: url("https://res.cloudinary.com/ddn317rz7/image/upload/c_crop,h_1024,w_3000,x_0,y_1000/v1611006392/Pack%20Rifle/Home%20Page/Pack_Rifle-41_3000pxW_li4lyz.jpg");'>
+                  <div class="row justify-content-center align-items-center" style="height: inherit;">
+                    <div class="col-4"></div>
+                    <div class="specs col-6 text-center h1">
+                      Width: 7/8in.<br>
+                      Height: 4in.
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- <div class="container">
+                  <div id="quote-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center px-5 py-5">
+                      <div class="carousel-item active">
+                        <p class="fs-4">“This rifle is only 15oz and easily breaks down to fit in your pack. Way cool!”</p>
+                        <p class="fs-4 quote-source">Mike Johnson</p>
+                      </div>
+                      <div class="carousel-item reduce quote">
+                        <p class="fs-4">“I received my Packrifle yesterday. &nbsp;After admiring the superb fit and finish last
+                          evening, I was able to get it out for some range time today. &nbsp;I fired a little over
+                          200 rounds, and the rifle functioned flawlessly. &nbsp;Easy to load and eject, strong
+                          primer strikes, and easy to clean afterwards. &nbsp;I would recommend this rifle to anyone
+                          who is looking for a light, dependable, takedown rifle. &nbsp;This is already one of my
+                          favorites.”</p>
+                          <p class="fs-4 quote-source">R. Ford, Ontario, Canada</p>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#quote-carousel" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#quote-carousel" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </a>
+                  </div>
+                </div> -->
+
+                <hr />
+
+                <div class="row">
+
+                    <th:block th:if="${products}" id="products" class="group" th:each="product : ${products}"
+                        th:object="${product}">
+                        <div class="col-sm-6 col-md-3" th:if="${product.isActive()}"
+                            th:include="catalog/partials/productListItem">
+                        </div>
+                    </th:block>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <th:block layout:fragment="post-content" />
+
+    <footer th:replace="layout/partials/footer"></footer>
+</body>
+
+</html>

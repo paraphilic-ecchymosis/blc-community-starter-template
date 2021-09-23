@@ -1,0 +1,82 @@
+a:hover {
+  color: #c5873f;
+}
+
+.list-group-item {
+  color: #fff;
+  background-color: #866438;
+}
+
+li a, .link {
+  text-decoration: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+a, .link {
+  text-decoration: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+.btn-outline-primary {
+  color: #866438;
+  border-color: #866438;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  border-color: #866438;
+  background-color: #866438;
+}
+
+.btn-product-primary {
+  color: #fff;
+  border-color: #fff;
+  background-color: #c5873f;
+}
+
+.spacer {
+  padding: 37px 0 36px 0;
+}
+
+.main-theme {
+  color: #444;
+  background-color: #f8f6f2;
+}
+
+body {
+  color: #444;
+  background-color: #fff;
+}
+
+#distrib-zinger {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-image: url(/pr-content/uploads/2015/10/Assembled-Pack-Rifle-in-Backpack-ready-to-shoot_2-1500x1000.png);
+  background-attachment: scroll;
+  background-position: center center;
+}
+
+#nav-tabContent div.show {
+  padding: 5px 0px;
+}
+
+#nav-tabContent div.show, #nav-tab a.active {
+  background-color: #f8f6f2;
+}
+
+.reduce {
+  margin: 0 auto 0 12.5%;
+  width: 75%;
+}
+
+.special-amp {
+  font-family: "Baskerville", "Palatino Linotype", "Palatino", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.3em;
+  line-height: 0.5em;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=custom.css.map */
