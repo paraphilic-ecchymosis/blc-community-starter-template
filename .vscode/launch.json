@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SiteApplication<boot-community-demo-site>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.community.SiteApplication",
+            "projectName": "boot-community-demo-site",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
