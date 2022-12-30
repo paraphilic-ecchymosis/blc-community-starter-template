@@ -142,7 +142,7 @@ table.payment-billing-method tr:not(:first-child), .fulfillment-group:not(:first
 
 @media (min-width: 769px) {
     .table-responsive-slim {
-        overflow-x: visible; !important;
+        overflow-x: visible !important;
     }
 }
 

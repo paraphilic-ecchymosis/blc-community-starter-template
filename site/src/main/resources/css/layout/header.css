@@ -24,7 +24,7 @@ body.sandbox-preview .navbar-fixed-top, body.csr-mode .navbar-fixed-top {
     display: block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    content: url(https://res.cloudinary.com/ddn317rz7/image/upload/v1611007693/Pack%20Rifle/Common/Pack-Rifle-Black-Logo-300x86_wsrkuj.png);
+    content: url();
     width: 120px;
     transform: scale(1.92);
     transition: all .4s ease-in-out;
